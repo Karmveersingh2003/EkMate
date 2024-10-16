@@ -11,8 +11,8 @@ function App() {
     <Router>
         
       
-         
-           {/* <Navbar/> */}
+{/*          
+           <Navbar/> */}
          <Routes>
            <Route index element={<Home/>}></Route>  
            <Route path='/*' element={<h1>error page</h1>}></Route>
