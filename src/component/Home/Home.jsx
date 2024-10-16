@@ -1,15 +1,18 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './home.css';
 import "../Navbar/navbar.css"
 import admin from "./img/admins.jpg"
 import student from "./img/students.jpg"
 import faculty from "./img/faculty.jpg"
+import bustrack from "./img/bustrack.webp"
+import eventbased from "./img/eventbased.avif"
+import adminpannel from "./img/adminpannel.webp"
 
 export default function Home() {
-   
+
   return (
     <>
-     
+
       {/* Header */}
       <header id="home">
         <div className="header-content">
@@ -68,93 +71,55 @@ export default function Home() {
       {/* Explore Section */}
       <section className="explore" id="explore">
         <div className="explore-content">
-          <h1>EXPLORE THE JIET</h1>
+          <h1>EXPLORE THE EkMate</h1>
           <div className="line"></div>
           <p>
-            “Travel makes one modest. You see what a tiny place you occupy in the world.”– Gustav Flaubert <br />
-            Exploring will make you want to pack your bag, book that ticket and jet away.
-          </p>
-          <a href="#" className="ctn">Explore more</a>
+            “Effortless College Commutes: Your Bus Schedules at Your Fingertips!""  <br /> <br />
+            “Track your bus, plan your commute, and never miss a ride with our
+            real-time bus management system."<br /></p> <br />
+
+          <a href="#" className="ctn">Download App</a>
         </div>
       </section>
 
-      {/* Tours Section */}
-      <section className="tours" id="tours">
-        <div className="container row">
-          <div className="col content-col">
-            <h1 className="font-color">UPCOMING TOURS & DESTINATION</h1>
+      {/* Events Section */}
+      <section className="events" id="events">
+        <div className="container">
+          <div className="title">
+            <h1 className="dark">Key Features</h1>
             <div className="line"></div>
-            <p>
-              Wed 28 Sept 2023: Port of Spain City Tour and Birdseye Fort View.<br />
-              Sat 1 Oct 2023: Tour the Gasparee Caves.<br />
-              Tues 4 Oct 2023: Trinidad North Coast Experience.<br />
-              And many more...
-            </p>
-            <a href="#" className="ctn">Learn more</a>
           </div>
-          <div className="image-col">
-            <div className="image-gallery">
-              <img src="./img/img3.png" alt="" />
-              <img src="./img/img4.png" alt="" />
-              <img src="./img/img5.png" alt="" />
-              <img src="./img/img6.png" alt="" />
-            </div>
+          <div className="row">
+            <article className="card col">
+              <img className="card-img" src={bustrack} alt="Everest camp trek" />
+              <h4 className="dark">Real-time Bus Tracking</h4>
+              <p className="font-color">
+                “See where your bus is in real-time and get accurate arrival times.”
+              </p>
+            
+            </article>
+            <article className="card col">
+              <img src={eventbased} alt="Walking holidays" />
+              <h4 className="dark">Daily and Event-based Schedules</h4>
+              <p className="font-color">
+                “Access daily schedules or find buses for special college events".
+              </p>
+             
+            </article>
+            <article className="card col">
+              <img src={adminpannel} alt="Andaman Beaches" />
+              <h4 className="dark">Admin Panel</h4>
+              <p className="font-color">
+                “Admins can effortlessly update schedules, ensuring everyone is up to date.”
+              </p>
+            
+            </article>
           </div>
         </div>
-        <br />
       </section>
 
-      {/* About Section
-      <section id="about">
-        <div className="title">
-          <h1 className="font-color">About Us</h1>
-          <div className="line"></div>
-        </div>
-        <br />
-        <div id="about_us">
-          <div className="boxx">
-            <div className="containerx">
-              <input type="radio" name="slider" id="item-1" defaultChecked />
-              <input type="radio" name="slider" id="item-2" />
-              <input type="radio" name="slider" id="item-3" />
-              <div className="cards">
-                <label className="cardt" htmlFor="item-1" id="col-img-1">
-                  <img src="./img/carousel-img4.jpg" alt="" />
-                </label>
-                <label className="cardt" htmlFor="item-2" id="col-img-2">
-                  <img src="./img/carousel-img5.jpg" alt="" />
-                </label>
-                <label className="cardt" htmlFor="item-3" id="col-img-3">
-                  <img src="./img/carousel-img6.jpg" alt="" />
-                </label>
-              </div>
-            </div>
-            <span id="about-quad">
-              <a href="#home">
-                <center>
-                  <h1 style={{ fontFamily: 'var(--ff-montserrat)', color: 'white' }}>
-                    Find that
-                  </h1>
-                  <br />
-                  <img
-                    className="img2"
-                    src="./img/mountain_dark.jpg"
-                    width="200"
-                    style={{ borderRadius: '12%' }}
-                    alt="Adventure"
-                  />
-                  <br />
-                  <h1 className="logo" style={{ fontSize: '50px' }}>
-                    ADVENTURE
-                  </h1>
-                </center>
-              </a>
-            </span>
-          </div>
-        </div>
-      </section> */}
+    
 
-      
     </>
   );
 }
