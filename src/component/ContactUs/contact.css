@@ -9,10 +9,10 @@
     display: flex;
     font-family: var(--ff-roboto);
   }
-/*   
-  form {
+  
+  forms {
     width: 50%;
-  } */
+  }
   
   .cbox {
     width: 45%;
@@ -201,7 +201,7 @@
     background-color: #222;
     padding: 1em;
     border-radius: 0.5rem;
- 
+   
 
   }
   
@@ -230,6 +230,7 @@
   
   .ccol-left {
     margin: 1em;
+    width:89%;
   }
   
   .ccol {
@@ -243,7 +244,7 @@
     }
     .cform {
       background-color: #222;
-      
+      margin-bottom: 50px;
       width: 260px !important;
       border-radius: 0.5rem;
     }
@@ -253,12 +254,46 @@
     }
 }
 
+
+@media (max-width:570px){
+  .ccol {
+    width: 100%;
+}
+.cform {
+  background-color: #222;
+  margin-bottom: 50px;
+  
+}
+
+.crow-message div {
+    width: 60%;
+}
+}
+
+@media (max-width:630px){
+  .ccol {
+    width: 100%;
+}
+.cform {
+  margin-bottom: 50px;
+ 
+}
+
+.crow-message div {
+    width: 60%;
+}
+}
+
   @media (min-width: 768px) {
     .ccol {
         width: 50%; /* Adjusts column width for tablets */
     }
 
-    
+    .cform {
+      background-color: #222;
+      margin-bottom: 50px;
+     
+    }
     
   .crow-message {
     margin: 5rem;
@@ -277,6 +312,7 @@
     .crow-message div {
         width: 20%; /* Adjusts width for larger screens */
     }
+    
 }
 
   #name {

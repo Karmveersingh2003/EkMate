@@ -11,7 +11,7 @@ export default function Contactus() {
                 <div class="line"></div>
             </div>
             <div class="contact_us">
-                <form class="cform" action="" method="post">
+                <forms class="cform" action="" method="post">
                     <div class="crow-message">
                         <h1 class="color">Send us a message</h1>
                         <div></div>
@@ -23,13 +23,13 @@ export default function Contactus() {
                             name="name"
                             placeholder="Your name"
                         />
+                    </div>
                         <input
                             type="text"
                             id="email"
                             name="email"
                             placeholder="Your Email id"
                         />
-                    </div>
                     <div class="crow">
                         <div class="ccol-left">
                             <select name="country" id="country" >
@@ -55,7 +55,7 @@ export default function Contactus() {
                         </div>
                     </div>
                     <input class="crow-s" type="submit" value="Send Query" />
-                </form>
+                </forms>
                 <div class="cbox">
                     <div>
                         <p class="cbox-message">
